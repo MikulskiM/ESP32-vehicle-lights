@@ -1,19 +1,75 @@
-CMakeLists.txt.user
+# --- CMake ---
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
+CMakeLists.txt.user
 CMakeUserPresets.json
+CTestTestfile.cmake
+compile_commands.json
+install_manifest.txt
+Testing/
+_deps/
 
-# CLion
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#cmake-build-*
+# --- PlatformIO ---
+.pio/
+.pioenvs/
+.piolibdeps/
+.pio/libdeps/
+.pio/build/
+.pio/test/
+.pio/.cache/
+.pio/.sconsign.dblite
+
+# --- ESP-IDF sdkconfig ---
+sdkconfig*
+
+# --- VS Code ---
+.vscode/
+.history/
+*.code-workspace
+
+# --- JetBrains/CLion ---
+.idea/
+cmake-build-*/
+
+# --- SDK configs ---
+sdkconfig
+sdkconfig.*
+sdkconfig.old
+
+# --- Build output ---
+build/
+*.elf
+*.bin
+*.map
+*.hex
+*.log
+
+# --- Misc ---
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+*.user
+
+# --- OS generated ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Python cache ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Test output ---
+test/output/
+test/*.log
+
+# --- Ignore README placeholders in include/lib/test ---
+include/README
+lib/README
+test/README

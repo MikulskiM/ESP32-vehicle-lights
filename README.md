@@ -36,9 +36,9 @@ System składa się z trzech głównych modułów (nodów) opartych na ESP32:
 
 Repozytorium jest podzielone na trzy główne podfoldery, z których każdy zawiera niezależny projekt PlatformIO dla danego modułu ESP32.
 
-* `ESP32-master-controller/` - Projekt dla sterownika głównego.
+* `ESP32-master-controller/` - Projekt dla sterownika głównego z wyświetlaczem.
 * `ESP32-front-lights/` - Projekt dla modułu świateł przednich.
-* `ESP32-rear-lights/` - Projekt dla modułu świateł tylnych.
+* `ESP32-rear-lights-camera/` - Projekt dla modułu świateł tylnych i kamery cofania.
 
 Dodatkowe katalogi:
 * `common/` - (Opcjonalnie) folder na pliki i klasy współdzielone między projektami np. komunikacja, logi itp.
